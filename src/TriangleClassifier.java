@@ -4,7 +4,8 @@ public class TriangleClassifier {
 			return "tam giác đều";
 		} else if (side1 == side2) {
 			return "tam giác cân";
+		} else {
+			return "tam giác thường";
 		}
-		throw new UnsupportedOperationException();
 	}
 }
