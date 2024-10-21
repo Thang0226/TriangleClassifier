@@ -64,4 +64,19 @@ public class TriangleClassifierTest {
 		// assert
 		assertEquals(expected, result);
 	}
+
+	@Test
+	@DisplayName("Triangle sides: (-1)-2-1")
+	public void testTriangleClassifierSminus1S2S1() {
+		// arrange
+		TriangleClassifier classifier = new TriangleClassifier();
+		int side1 = -1;
+		int side2 = 2;
+		int side3 = 1;
+		String expected = "không phải tam giác";
+		// action
+		String result = classifier.classify(side1, side2, side3);
+		// assert
+		assertEquals(expected, result);
+	}
 }
